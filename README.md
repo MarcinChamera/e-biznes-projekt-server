@@ -1,0 +1,5 @@
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=MarcinChamera_e-biznes-projekt-server&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=MarcinChamera_e-biznes-projekt-server)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=MarcinChamera_e-biznes-projekt-server&metric=bugs)](https://sonarcloud.io/summary/new_code?id=MarcinChamera_e-biznes-projekt-server)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=MarcinChamera_e-biznes-projekt-server&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=MarcinChamera_e-biznes-projekt-server)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=MarcinChamera_e-biznes-projekt-server&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=MarcinChamera_e-biznes-projekt-server)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=MarcinChamera_e-biznes-projekt-server&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=MarcinChamera_e-biznes-projekt-server)
