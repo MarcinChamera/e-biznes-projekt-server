@@ -79,4 +79,4 @@ jobs:
         with:
           app-name: 'namelessshop-server'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          images: 'ebiznesprojekt.azurecr.io/${{ secrets.AZURECONTAINERUSERNAME }}/nameless-shop-server:${{ github.sha }}'
+          images: 'ebiznesprojekt.azurecr.io/${{ secrets.AZURECONTAINERUSERNAME }}/nameless-shop-server:${{ github.sha }}' 
