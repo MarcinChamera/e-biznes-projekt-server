@@ -37,3 +37,15 @@ func GetUsers(c echo.Context) error {
 	database.GetDatabase().Find(&users)
 	return c.JSON(http.StatusOK, users)
 }
+
+func DeleteUser(c echo.Context) error {
+	id := c.Param("id")
+	var user models.User
+
+	result := database.GetDatabase().Delete(&user, id)
+	if result.Error != nil {
+		return c.String(http.StatusNotFound, "User not found")
+	}
+
+	return c.JSON(http.StatusOK, map[string]string{"message": "User deleted successfully"})
+}
