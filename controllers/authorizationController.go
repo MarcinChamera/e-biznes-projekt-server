@@ -45,9 +45,7 @@ var facebookConfig = &oauth2.Config{
 	ClientID:     os.Getenv("FACEBOOK_CLIENT_ID"),
 	ClientSecret: os.Getenv("FACEBOOK_CLIENT_SECRET"),
 	Scopes: []string{
-		"user:email",
-		"read:user",
-		// "email"
+		"email",
 	},
 	Endpoint: facebook.Endpoint,
 }
@@ -219,7 +217,7 @@ func FacebookCallback(c echo.Context) error {
 
 	newToken := helpers.GenerateNewToken(40)
 
-	c.Redirect(http.StatusFound, "https://namelessshop.azurewebsites.net/login/auth/facebook/success/"+newToken+"&"+user.Email)
+	c.Redirect(http.StatusFound, "https://namelessshop.azurewebsites.net/login/auth/facebook/success/"+newToken+"&"+user.Email+"&"+strconv.Itoa(int(userFromGet.ID)))
 
 	return c.JSON(http.StatusOK, echo.Map{
 		"token": newToken,
